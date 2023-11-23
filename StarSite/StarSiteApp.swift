@@ -4,7 +4,8 @@ import SwiftUI
 struct StarSiteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarSitesListView()
+            .environmentObject(DatabaseModel())
         }
     }
 }

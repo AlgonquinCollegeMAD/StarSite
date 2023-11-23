@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		10056CC32B0EE6A400F6BEB1 /* StarSiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CC22B0EE6A400F6BEB1 /* StarSiteApp.swift */; };
-		10056CC52B0EE6A400F6BEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CC42B0EE6A400F6BEB1 /* ContentView.swift */; };
+		10056CC52B0EE6A400F6BEB1 /* StarSitesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CC42B0EE6A400F6BEB1 /* StarSitesListView.swift */; };
 		10056CC72B0EE6A500F6BEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10056CC62B0EE6A500F6BEB1 /* Assets.xcassets */; };
 		10056CCB2B0EE6A500F6BEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10056CCA2B0EE6A500F6BEB1 /* Preview Assets.xcassets */; };
+		10056CD32B0EE70600F6BEB1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CD22B0EE70600F6BEB1 /* WebView.swift */; };
+		10056CD52B0EE71F00F6BEB1 /* StarSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CD42B0EE71F00F6BEB1 /* StarSite.swift */; };
+		10056CD82B0EE78400F6BEB1 /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10056CD72B0EE78400F6BEB1 /* DatabaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10056CBF2B0EE6A400F6BEB1 /* StarSite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarSite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10056CC22B0EE6A400F6BEB1 /* StarSiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSiteApp.swift; sourceTree = "<group>"; };
-		10056CC42B0EE6A400F6BEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10056CC42B0EE6A400F6BEB1 /* StarSitesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSitesListView.swift; sourceTree = "<group>"; };
 		10056CC62B0EE6A500F6BEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10056CC82B0EE6A500F6BEB1 /* StarSite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarSite.entitlements; sourceTree = "<group>"; };
 		10056CCA2B0EE6A500F6BEB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10056CD22B0EE70600F6BEB1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		10056CD42B0EE71F00F6BEB1 /* StarSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSite.swift; sourceTree = "<group>"; };
+		10056CD72B0EE78400F6BEB1 /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				10056CC22B0EE6A400F6BEB1 /* StarSiteApp.swift */,
-				10056CC42B0EE6A400F6BEB1 /* ContentView.swift */,
+				10056CD12B0EE6DE00F6BEB1 /* Views */,
+				10056CD62B0EE72300F6BEB1 /* App Models */,
+				10056CD92B0EE7CD00F6BEB1 /* Observable Models */,
 				10056CC62B0EE6A500F6BEB1 /* Assets.xcassets */,
 				10056CC82B0EE6A500F6BEB1 /* StarSite.entitlements */,
 				10056CC92B0EE6A500F6BEB1 /* Preview Content */,
@@ -67,6 +75,31 @@
 				10056CCA2B0EE6A500F6BEB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10056CD12B0EE6DE00F6BEB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10056CC42B0EE6A400F6BEB1 /* StarSitesListView.swift */,
+				10056CD22B0EE70600F6BEB1 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10056CD62B0EE72300F6BEB1 /* App Models */ = {
+			isa = PBXGroup;
+			children = (
+				10056CD42B0EE71F00F6BEB1 /* StarSite.swift */,
+			);
+			path = "App Models";
+			sourceTree = "<group>";
+		};
+		10056CD92B0EE7CD00F6BEB1 /* Observable Models */ = {
+			isa = PBXGroup;
+			children = (
+				10056CD72B0EE78400F6BEB1 /* DatabaseModel.swift */,
+			);
+			path = "Observable Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10056CC52B0EE6A400F6BEB1 /* ContentView.swift in Sources */,
+				10056CD82B0EE78400F6BEB1 /* DatabaseModel.swift in Sources */,
+				10056CD32B0EE70600F6BEB1 /* WebView.swift in Sources */,
+				10056CC52B0EE6A400F6BEB1 /* StarSitesListView.swift in Sources */,
+				10056CD52B0EE71F00F6BEB1 /* StarSite.swift in Sources */,
 				10056CC32B0EE6A400F6BEB1 /* StarSiteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
