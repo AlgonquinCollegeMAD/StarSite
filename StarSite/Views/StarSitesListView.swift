@@ -8,8 +8,19 @@ struct StarSitesListView: View {
         ForEach(model.starSites, id: \.id) { model in
           NavigationLink {
             VStack {
-              Link("Open this link in the browser", destination: model.url)
               WebView(url: model.url)
+                .toolbar {
+                  ToolbarItem {
+                    ShareLink(item: model.url) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                  }
+                  ToolbarItem {
+                    Link(destination: model.url) {
+                      Image(systemName: "safari")
+                    }
+                  }
+                }
               Spacer()
             }
           } label: {
